@@ -1,0 +1,61 @@
+<div id="containerMenu">
+    <div id="menubar">   
+    <button class="botones" id="addActividad" (click)="mostrarInput()" >Añadir Actividad</button>
+    <button class="botones" id="borrarActividad" (click)="mostrarRemove()">Borrar Actividad</button>
+    <button class="botones" id="editarActividad" (click)="mostrarEditar()" >Editar Actividad</button>
+    </div>
+    
+
+
+    <div id="filtro">
+        <label for="filtroFecha">Ordena por fecha:</label>
+        <input #filtroFecha id="filtroFecha" type="datetime-local">
+        <button (click)="filtrarActividadesFecha(filtroFecha.value)">Go</button>
+        <label for="flitroEstado">Ordena por estado:</label>
+        <select id="filtroEstado" #filtroEstado (change)="filtrarActividadesEstado(filtroEstado.value)">
+            <option value="Toda" selected>Todas</option>
+            <option value="Disponible">Disponibles</option>
+            <option value="Importante">Importantes</option>
+            <option value="Pendiente">Pendientes</option>
+            <option value="Realizada">Realizadas</option>
+            <option value="Borrada">Borradas</option>
+        </select>
+    </div>   
+</div>
+
+
+<div id="inputFieldAnadir" [ngStyle]="{'display':inputFieldVisibleAnadir ? 'block':'none'}">
+    <label for="titulo">Titulo: </label>
+        <input #refTitulo id="titulo" type="text">
+    <label for="descripcion">Descripción: </label>
+        <input #refDescripcion id="descripcion" type="text">
+    <label for="fecha">Fecha: </label>
+        <input #refFecha id="fecha" type="datetime-local">
+    <label for="flitroEstado">Estado:</label>
+        <select id="filtroEstado" #refEstado>
+            <option value="Disponible">Poco Importante</option>
+            <option value="Importante">Muy Importante</option>
+            <option value="Pendiente" selected>Importante</option>
+        </select>
+    <button class="botones" id="addActividad" (click)="addActivity(refTitulo.value, refDescripcion.value, refFecha.value, refEstado.value)"> Submit </button>
+</div>
+<div id="inputFieldBorrar" [ngStyle]="{'display':inputFieldVisibleBorrar ? 'block':'none'}">
+    <label for="tituloBorrar">Titulo actividad a borrar: </label>
+        <input #refTituloBorrar id="tituloBorrar" type="text">
+        <button class="botones" id="addActividad" (click)="removeActivity(refTituloBorrar.value)">Borra</button>
+</div>
+<div id="inputFieldEditar" [ngStyle]="{'display':inputFieldVisibleEditar ? 'block':'none'}">
+    <label for="tituloEditar">Titulo actividad a editar: </label>
+        <input #refTituloEditar id="tituloEditar" type="text">
+    <label for="descripcionEditar">Descripción: </label>
+        <input #refDescripcionEditar id="descripcionEditar" type="text">
+    <label for="fechaEditar">Fecha: </label>
+        <input #refFechaEditar id="fechaEditar" type="datetime-local">
+    <label for="flitroEstado">Estado:</label>
+        <select id="filtroEstado" #refEstadoEditar>
+            <option value="Disponible" selected>Disponible</option>
+            <option value="Importante">Importante</option>
+            <option value="Pendiente">Pendiente</option>
+        </select>
+        <button class="botones" id="addActividad" (click)="editActivity(refTituloEditar.value, refDescripcionEditar.value, refFechaEditar.value, refEstadoEditar.value)">Edita</button>
+</div>

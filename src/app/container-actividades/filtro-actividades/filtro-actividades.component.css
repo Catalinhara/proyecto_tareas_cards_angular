@@ -1,0 +1,10 @@
+#containerActividadFiltradas{
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px;
+  background-color:rgba(66, 126, 230, 0.881);
+  margin:auto;
+  margin-top: 20px;
+}

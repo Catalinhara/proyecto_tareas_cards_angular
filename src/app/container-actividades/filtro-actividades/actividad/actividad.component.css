@@ -1,0 +1,199 @@
+.card {
+    display: flex; 
+    flex-direction: column;
+    border-radius: 5px;
+    width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 10px;
+    word-wrap: break-word; 
+    
+  }
+  
+  .card-header {
+    display: flex; 
+    flex-direction: column;
+    background-color:rgba(252, 83, 173, 0.666);
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    font-size: larger;
+    font-family:cursive;
+    font-weight:bold;
+    border:2px double rgb(6, 1, 3);
+    text-decoration: underline;
+  }
+  
+  .card-body {
+    display: flex; 
+    flex-direction: column;
+    padding: 10px;
+    overflow: auto;
+    justify-items: center;
+    word-wrap: break-word;
+    border:2px double rgb(11, 25, 176);
+    margin-top:1em;
+    background-color: rgba(15, 9, 9, 0.5);
+    color: aliceblue;
+  }
+  
+
+  .card-pendiente {
+    display: flex; 
+    flex-direction: column;
+    background-color: #ffff00; 
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 3px 2px 4px rgba(255, 255, 255, 0.3); 
+    border-radius: 5px; 
+    padding: 10px;
+    word-wrap: break-word; 
+
+  }
+  
+  .card-por-realizar {
+    display: flex; 
+    flex-direction: column;
+    background-color: #0CCE6B; 
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+    padding: 10px;
+    word-wrap: break-word;
+  }
+  
+  .card-caducada {
+    display: flex; 
+    flex-direction: column;
+    background-color: #f70000; 
+    max-width: 400px;
+    margin-top: 20px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    word-wrap: break-word;
+  }
+ button{
+  width: 100px;
+  margin: auto;
+  margin-top:3px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: large;
+  background-color:rgb(2, 108, 214);
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+ }
+ button:hover{
+  background-color: blue;
+ }
+ #btnBorrar{
+  background-color: #fd0000;
+  margin-top:3px;
+  margin-left: 2px;
+ }
+ #btnBorrar:hover{
+  background-color: brown;
+ }
+
+ #btnInfo{
+  font-size: small;
+  float:right;
+  
+ }
+ #inputInfo{
+  float:right;
+ }
+ #btnInfoOk{
+  float:right;
+  width: 30px;
+  font-size: 12px;
+ }
+
+ #idDescripcion{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #idDate{
+  text-align: right;
+  font-family: monospace;
+
+ }
+ .idEstado{
+  color: antiquewhite;
+
+ }
+ .idCardRealizada{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background-color: #82848293;
+  margin:auto;
+  margin-top: 2em;
+  width: 50%;
+  border:1px solid rgb(2, 57, 20);
+  color: rgb(17, 255, 0);
+  text-align: center; 
+ }
+ .idCardImportante{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background-color: #f803039c;
+  margin:auto;
+  margin-top: 2em;
+  width: 50%;
+  border:1px solid rgb(2, 57, 20);
+  color: rgb(230, 255, 4);
+  text-align: center; 
+
+ }
+ .idCardPendiente{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background-color: #f8d703;
+  margin:auto;
+  margin-top: 2em;
+  width: 50%;
+  border:1px solid rgb(2, 57, 20);
+  color: rgb(5, 5, 2);
+  text-align: center; 
+
+ }
+ .idCardDisponible{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background-color: #00ff0096;
+  margin:auto;
+  margin-top: 2em;
+  width: 50%;
+  border:1px solid rgb(2, 57, 20);
+  color: rgb(255, 255, 255);
+  text-align: center; 
+
+ }
+ .idCardBorrada{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  background-color: #0a0a0a;
+  margin:auto;
+  margin-top: 2em;
+  width: 50%;
+  border:1px solid rgb(2, 57, 20);
+  color: rgb(255, 0, 0);
+  text-align: center; 
+
+ }
+ #idExtraInfo{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: italic;
+  font-size: smaller;
+
+ }

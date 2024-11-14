@@ -1,0 +1,5 @@
+
+<div id="containerActividades">@for(cadaActividad of actividades; track $index){
+    <app-actividad [actividad]='cadaActividad' (realizadaClick)="cuandoAddToRealizadas($event)" (borrarClick)="cuandoAddToBorradas($event)" (extraInfoClick)="cuandoExtraInfo($event)"></app-actividad>
+}
+</div>

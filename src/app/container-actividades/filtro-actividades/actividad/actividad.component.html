@@ -1,0 +1,21 @@
+<div class="card" [ngClass]="getCardColor()">
+    <div class="card-header">
+      {{ actividad.titulo }}
+    </div>
+    <div class="card-body">
+      <p id="idDescripcion">{{ actividad.descripcion }}</p>
+      <p id="idDate">{{ actividad.fecha | date:'dd/MM/yyyy HH:mm' }}</p>
+      <p id="idEstado" [ngClass]="getEstadoStyle()">{{ actividad.estado }}</p>
+      <p id="idExtraInfo">Información adiciónal: {{ actividad.extraInfo }}</p>
+    </div>
+    <div [ngStyle]="{'display':inputInfoVisible? 'block':'none'}">
+      
+      <button id="btnInfoOk"   (click)="mostrarInputInfo()" (click)="addExtraInfo(refInputInfo.value)">ok</button>
+      <input id="inputInfo" placeholder="Añade información extra..." #refInputInfo >
+    </div>
+    <div>
+    <button id="btnDone" (click)="addToRealizadas()">Realizada</button>
+    <button id="btnBorrar" (click)="addToBorradas()">Borrar</button>
+    <button id="btnInfo"   (click)="mostrarInputInfo()">+Info</button>
+    </div>
+  </div>

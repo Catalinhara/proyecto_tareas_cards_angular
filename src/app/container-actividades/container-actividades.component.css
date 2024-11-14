@@ -1,0 +1,8 @@
+#containerActividades{
+    display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 30px;
+  background-color:greenyellow;
+  margin-top: 20px;
+}
