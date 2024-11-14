@@ -1,6 +1,23 @@
 # proyecto_tareas_cards_angular
-Un proyecto propio para hacer operaciones CRUD sobre tareas, practicando con framework de Angular.
-# TareaFinal7
+
+Un proyecto propio para hacer operaciones CRUD sobre tareas, practicando con el framework Angular. Este proyecto permite gestionar una lista de tareas, mostrando cada tarea como un card interactivo, donde se pueden realizar operaciones como crear, leer, actualizar y eliminar tareas.
+
+## TareaFinal7
+
+Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.3.6.
+
+### Tecnologías utilizadas:
+
+- **Angular**: Framework utilizado para el desarrollo del frontend.
+- **TypeScript**: Lenguaje utilizado para escribir el código del proyecto.
+- **HTML/CSS**: Para el diseño y maquetado de las vistas.
+
+## Development server
+
+Para iniciar el servidor de desarrollo, ejecuta:
+
+```bash
+ng serve
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
 
