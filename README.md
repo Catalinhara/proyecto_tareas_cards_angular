@@ -1,3 +1,5 @@
+# proyecto_tareas_cards_angular
+Un proyecto propio para hacer operaciones CRUD sobre tareas, practicando con framework de Angular.
 # TareaFinal7
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.6.
